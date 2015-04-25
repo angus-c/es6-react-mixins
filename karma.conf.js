@@ -6,7 +6,8 @@ module.exports = function(config) {
     ],
     frameworks: ['mocha', 'chai'],
     preprocessors: {
-      'tests/*.spec.js': ['webpack', 'sourcemap'],
+      'lib/*.js': ['webpack', 'sourcemap'],
+      'tests/*.spec.js': ['webpack', 'sourcemap']
     },
     plugins: [
       'karma-chrome-launcher',
@@ -21,7 +22,7 @@ module.exports = function(config) {
     webpack: {
       module: {
         loaders: [
-          { test: /\.spec\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+          { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader?optional=runtime' },
         ],
       },
       watch: true,
