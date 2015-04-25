@@ -1,0 +1,31 @@
+{
+  "name": "universal-react-mixins",
+  "version": "0.1.0",
+  "description": "Augments ES6 classes with ES6 or traditional React mixins",
+  "scripts": {
+    "test": "karma start --single-run"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angus-c/universal-react-mixins.git"
+  },
+  "keywords": [
+    "es6",
+    "react",
+    "mixins",
+    "class"
+  ],
+  "devDependencies": {
+    "babel-core": "^5.1.11",
+    "babel-loader": "^5.0.0",
+    "karma": "^0.12.31",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.8",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-mocha": "^0.1.10",
+    "karma-sourcemap-loader": "^0.3.4",
+    "karma-webpack": "^1.5.0",
+    "webpack": "^1.8.9"
+  }
+}
