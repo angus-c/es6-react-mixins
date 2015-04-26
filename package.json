@@ -7,7 +7,7 @@
   "scripts": {
     "compile": "babel src --out-dir lib",
     "prepublish": "npm run compile",
-    "test": "karma start --single-run"
+    "test": "./node_modules/.bin/karma start --single-run"
   },
   "license": "MIT",
   "repository": {
