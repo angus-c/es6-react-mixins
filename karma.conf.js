@@ -18,7 +18,7 @@ module.exports = function(config) {
       'karma-webpack',
     ],
     reporters: ['dots'],
-    singleRun: false,
+    singleRun: true,
     webpack: {
       module: {
         loaders: [

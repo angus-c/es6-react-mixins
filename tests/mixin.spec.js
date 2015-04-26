@@ -1,4 +1,4 @@
-import mixin from '../lib/mixins';
+import mixin from '../lib/mixin';
 import React from 'react/addons';
 
 const ReactTestUtils = React.addons.TestUtils;

@@ -2,6 +2,8 @@
   "name": "universal-react-mixins",
   "version": "0.1.0",
   "description": "Augments ES6 classes with ES6 or traditional React mixins",
+  "author": "Angus Croll",
+  "main": "lib/mixin.js",
   "scripts": {
     "test": "karma start --single-run"
   },
@@ -16,9 +18,6 @@
     "mixins",
     "class"
   ],
-  "dependencies": {
-    "react": "^0.13.1"
-  },
   "devDependencies": {
     "babel-core": "^5.1.11",
     "babel-loader": "^5.0.0",
