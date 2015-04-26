@@ -5,6 +5,8 @@
   "author": "Angus Croll",
   "main": "lib/mixin.js",
   "scripts": {
+    "compile": "babel src --out-dir lib --optional runtime",
+    "prepublish": "npm run compile",
     "test": "karma start --single-run"
   },
   "license": "MIT",
