@@ -1,5 +1,5 @@
 {
-  "name": "universal-react-mixins",
+  "name": "es6-react-mixins",
   "version": "0.1.0",
   "description": "Augments ES6 classes with ES6 or traditional React mixins",
   "author": "Angus Croll",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/angus-c/universal-react-mixins.git"
+    "url": "https://github.com/angus-c/es6-react-mixins.git"
   },
   "keywords": [
     "es6",
