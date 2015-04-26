@@ -1,6 +1,6 @@
 {
   "name": "es6-react-mixins",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Augments ES6 classes with ES6 or traditional React mixins",
   "author": "Angus Croll",
   "main": "lib/mixin.js",
