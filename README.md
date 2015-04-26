@@ -1,5 +1,7 @@
 # es6-react-mixins
 
+[![Build Status](https://secure.travis-ci.org/angus-c/es6-react-mixins.png?branch=master)](http://travis-ci.org/angus-c/es6-react-mixins)
+
 `es6-react-mixins` is a module that lets you augment your ES6 React component classes with any number of custom ES6 mixins. You can also use it to merge traditional pre-ES6 React mixin objects into your ES6 React classes.
 
 Inspired by [this gist](https://gist.github.com/sebmarkbage/fac0830dbb13ccbff596) by [Sebastian Markbåge](https://github.com/sebmarkbage) the strategy is transient class hierarchies – instead of locking classes into permanent *is a* roles, class realtionships are assembled and re-assembled at will.
