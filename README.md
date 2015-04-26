@@ -35,7 +35,7 @@ class MyComponent extends mixin(es6Mixin) {
 
 React.render(<MyComponent>, document.body);
 ```
-The API works with any number of mixins. Obviously order matters withe multiple mixins–each super call works its way up the hierarchy.
+The API works with any number of mixins. Obviously order matters with multiple mixins – each super call works its way up the hierarchy.
 
 ```js
 const mixin1 = base => class extends base {
@@ -98,6 +98,21 @@ class MyComponent extends mixin(reactMixin) {
 
 #Installation
 
+```
+npm install es6-react-mixins
+```
+
+The install process transpiles the sourcecode to ES5 and drops it in a `lib` directory (which is the default inmport for the module).
+
+#Testing
+
+```
+npm test
+```
+
+#Contributions
+
+Yes please!
 
 
 
