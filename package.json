@@ -21,6 +21,7 @@
     "class"
   ],
   "devDependencies": {
+    "babel": "^5.1.13",
     "babel-core": "^5.1.11",
     "babel-loader": "^5.0.0",
     "babel-runtime": "^5.1.13",
