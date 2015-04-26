@@ -4,7 +4,7 @@
 
 Inspired by [this gist](https://gist.github.com/sebmarkbage/fac0830dbb13ccbff596) by [Sebastian Markbåge](https://github.com/sebmarkbage) the strategy is transient class hierarchies – instead of locking classes into permanent *is a* roles, class realtionships are assembled and re-assembled at will.
 
-ES6 mixins are functions that return classes. There's no need to extend `React.component`, you get that for free.
+ES6 mixins are functions that return classes. The `base` parameter is used internally to construct the mixin chain. There's no need to extend `React.component`, you get that for free.
 
 ```js
 const es6Mixin = base => class extends base {
