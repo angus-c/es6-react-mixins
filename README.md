@@ -1,6 +1,6 @@
 # es6-react-mixins
 
-[![Build Status](https://secure.travis-ci.org/angus-c/es6-react-mixins.png?branch=master)](http://travis-ci.org/angus-c/es6-react-mixins) [![npm version](http://img.shields.io/npm/v/es6-react-mixins.svg)](https://npmjs.org/package/es6-react-mixins) [![Dependency Status](https://david-dm.org/badges/es6-react-mixins.svg)](https://david-dm.org/badges/es6-react-mixins)
+[![Build Status](https://secure.travis-ci.org/angus-c/es6-react-mixins.png?branch=master)](http://travis-ci.org/angus-c/es6-react-mixins) [![npm version](http://img.shields.io/npm/v/es6-react-mixins.svg)](https://npmjs.org/package/es6-react-mixins) [![Dependency Status](https://david-dm.org/angus-c/es6-react-mixins.svg)](https://david-dm.org/angus-c/es6-react-mixins.svg)
 
 `es6-react-mixins` is a module that lets you augment your ES6 React component classes with any number of custom ES6 mixins. You can also use it to merge traditional pre-ES6 React mixin objects into your ES6 React classes.
 
