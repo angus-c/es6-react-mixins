@@ -19,7 +19,7 @@ const es6Mixin = base => class extends base {
 };
 ```
 
-React components invokes mixins with a call to `super`.
+React components invoke mixins with a call to `super`.
 
 ```js
 import 'mixin' from 'es6-react-mixins';
@@ -37,7 +37,7 @@ class MyComponent extends mixin(es6Mixin) {
 
 React.render(<MyComponent>, document.body);
 ```
-The API works with any number of mixins. Obviously order matters withe multiple mixins–each super call works its way up the hierarchy.
+The API works with any number of mixins. Obviously order matters with multiple mixins – each `super` call works its way up the mixin hierarchy.
 
 ```js
 const mixin1 = base => class extends base {
