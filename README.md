@@ -104,7 +104,7 @@ class MyComponent extends mixin(reactMixin) {
 npm install es6-react-mixins
 ```
 
-The source is written in es6 put there's an npm prebublish step which transpiles to es5 and dumps into `lib` directory - which is the default import.
+The source is written in es6 but there's an npm prebublish step which transpiles to es5 and dumps into `lib` directory - which is the default import.
 
 #Testing
 
