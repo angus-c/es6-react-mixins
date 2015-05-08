@@ -5,7 +5,7 @@
 
 import React from 'react';
 
-const noop = () => {};
+const noop = () => null;
 const es6ify = (mixin) => {
   if (typeof mixin === 'function') {
     // mixin is already es6 style
