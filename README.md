@@ -22,8 +22,8 @@ const es6Mixin = base => class extends base {
 React components invoke mixins with a call to `super`.
 
 ```js
-import 'mixin' from 'es6-react-mixins';
-import 'React' from 'react';
+import mixin from 'es6-react-mixins';
+import React from 'react';
 
 class MyComponent extends mixin(es6Mixin) {
   componentWillMount() {
