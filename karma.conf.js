@@ -22,10 +22,10 @@ module.exports = function(config) {
     webpack: {
       module: {
         loaders: [
-          { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader?optional=runtime' },
-        ],
+          { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader?optional=runtime' }
+        ]
       },
-      watch: true,
+      watch: true
     },
     webpackServer: {
       noInfo: true,
