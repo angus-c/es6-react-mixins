@@ -108,4 +108,18 @@ describe('mixin', () => {
 
     ReactTestUtils.renderIntoDocument(<Test/>);
   });
+
+  it('defaults shouldComponentUpdate to truthy', () => {
+    class Test extends mixin(es6Mixin1) {
+      render() {
+        super.render();
+        return (
+          <p>Test</p>
+        );
+      }
+    }
+
+    const testInstance = new Test({});
+    assert.ok(testInstance.shouldComponentUpdate());
+  });
 });
