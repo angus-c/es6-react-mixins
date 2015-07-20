@@ -17,7 +17,7 @@ const es6ify = (mixin) => {
     // convert to ES6 class
     class NewClass extends Base {}
 
-    const clonedMixin = {...mixin};
+    const clonedMixin = Object.assign({}, mixin);
     // These React properties are defined as ES7 class static properties
     [
       'childContextTypes', 'contextTypes',
