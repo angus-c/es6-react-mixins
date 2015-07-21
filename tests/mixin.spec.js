@@ -123,3 +123,27 @@ describe('mixin', () => {
     assert.ok(testInstance.shouldComponentUpdate());
   });
 });
+
+describe('static property mixin support', () => {
+  const propTypes = {'test': true};
+
+  const es6Mixin = base => {
+    class newClass extends base {};
+    newClass.propTypes = propTypes;
+    return newClass;
+  }
+
+  const es5Mixin = {
+    propTypes: propTypes
+  };
+
+  it('upgrades ES6 properties', () => {
+    class Test extends mixin(es6Mixin) {}
+    assert.equal(Test.propTypes, propTypes);
+  });
+
+  it('upgrades ES5 properties', () => {
+    class Test extends mixin(es5Mixin) {}
+    assert.equal(Test.propTypes, propTypes);
+  })
+});
