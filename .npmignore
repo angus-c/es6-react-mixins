@@ -2,3 +2,4 @@ src/
 tests/
 karma.conf.js
 .travis.yml
+lib/*.map

@@ -1,0 +1,7 @@
+#!/bin/bash -xe
+mkdir -p tmp_test/{src,tests}
+npm run compile
+cp lib/* tmp_test/src
+babel --stage 0 tests --out-file tmp_test/tests/index.js -s
+mocha tmp_test/tests/index.js
+rm -rf tmp_test

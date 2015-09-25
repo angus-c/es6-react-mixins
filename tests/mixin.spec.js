@@ -1,4 +1,6 @@
-import mixin from '../src/mixin.js';
+import { assert } from 'chai';
+import jsdom from 'mocha-jsdom';
+import mixin, { mergeStaticProps } from '../src/mixin.js';
 import React from 'react/addons';
 
 const ReactTestUtils = React.addons.TestUtils;
@@ -37,6 +39,8 @@ const reactMixin = {
 };
 
 describe('mixin', () => {
+  jsdom();
+
   assert.typeOf(es6Mixin1, 'function');
   it('works with es6 mixins', () => {
     class Test extends mixin(es6Mixin1) {
@@ -125,6 +129,8 @@ describe('mixin', () => {
 });
 
 describe('static property mixin support', () => {
+  jsdom();
+
   const propTypes = {'test': true};
 
   const es6Mixin = base => {
@@ -144,6 +150,33 @@ describe('static property mixin support', () => {
 
   it('upgrades ES5 properties', () => {
     class Test extends mixin(es5Mixin) {}
-    assert.equal(Test.propTypes, propTypes);
+    assert.deepEqual(Test.propTypes, propTypes);
   })
+});
+
+describe('mergeStaticProps', () => {
+  jsdom();
+
+  const mixin1 = {
+    propTypes: {a: 1}
+  };
+  const mixin2 = (Base) => {
+    class NewClass extends Base {}
+    NewClass.propTypes = {
+      ...Base.propTypes,
+      a: 2,
+      b: 1
+    };
+    return NewClass;
+  };
+
+  it('merges ES7 static props of final class from its base class', () => {
+    class Test extends mixin(mixin2, mixin1) {
+      static propTypes = {a: 0, c: 3};
+    }
+    mergeStaticProps(Test);
+    assert.equal(Test.propTypes.a, 2);
+    assert.equal(Test.propTypes.b, 1);
+    assert.equal(Test.propTypes.c, 3);
+  });
 });
