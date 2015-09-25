@@ -173,10 +173,6 @@ describe('mergeStaticProps', () => {
   it('merges ES7 static props of final class from its base class', () => {
     class Test extends mixin(mixin2, mixin1) {
       static propTypes = {a: 0, c: 3};
-
-      constructor() {
-        super();
-      }
     }
     mergeStaticProps(Test);
     assert.equal(Test.propTypes.a, 2);
