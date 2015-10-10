@@ -21,8 +21,8 @@
     "class"
   ],
   "devDependencies": {
-    "babel": "^5.5.8",
-    "babel-core": "^5.5.8",
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
     "babel-loader": "^5.3.2",
     "chai": "^3.3.0",
     "jsdom": "^6.5.1",
@@ -31,8 +31,8 @@
     "webpack": "^1.12.2"
   },
   "dependencies": {
-    "babel-runtime": "^5.5.8",
-    "react": "^0.13.2"
+    "babel-runtime": "^5.8.25",
+    "react": "^0.13.3"
   },
   "bugs": {
     "url": "https://github.com/angus-c/es6-react-mixins/issues"
