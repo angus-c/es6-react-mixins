@@ -5,9 +5,9 @@
   "author": "Angus Croll",
   "main": "lib/mixin.js",
   "scripts": {
-    "compile": "babel --stage 0 --optional runtime src --out-dir lib",
+    "compile": "make compile",
     "prepublish": "npm run compile",
-    "test": "scripts/test"
+    "test": "make test"
   },
   "license": "MIT",
   "repository": {
